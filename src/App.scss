@@ -4,7 +4,7 @@ $color-one: rgb(219, 220, 221);
 $font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 $font-size: 16px;
 
-$margin-gap: 5px;
+$margin-one: 5px;
 
 @mixin center {
   justify-content: center;
@@ -76,4 +76,20 @@ aside {
 
 .right-side {
   grid-column: 3 / 4;
+}
+
+.botton-size-inputs {
+  display: flex;
+  @include center();
+}
+
+.input-form {
+  display: flex;
+  margin-right: $margin-one * 4;
+
+  &__input {
+    text-align: center;
+    margin-left: $margin-one;
+    margin-right: $margin-one;
+  }
 }
